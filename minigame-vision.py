@@ -5,7 +5,7 @@ import time
 from random import choice
 
 cwd = os.path.dirname(os.path.abspath(__file__)) + "\\"
-images = "screen-captures"
+# images = "screen-captures"
 static_images = "static-captures"
 os.chdir(cwd)
 last_minigame_choice = []
@@ -14,17 +14,17 @@ last_minigame_choice = []
 def startup():
     try:
         os.mkdir(static_images)
-        os.mkdir(images)
+        # os.mkdir(images)
 
     except FileExistsError:
         print(f"[!]Path already exists => {cwd}{static_images}\n")
 
     print(f"[+] Attempting to clean up last sessions screen-captures in: {images}")
 
-    for old_images in os.listdir(images):
-        # We will remove old screen captures if they start with "dynamic-capture"
-        if old_images.startswith("dynamic-capture"):
-            os.remove(old_images)
+    # for old_images in os.listdir(images):
+    #     # We will remove old screen captures if they start with "dynamic-capture"
+    #     if old_images.startswith("dynamic-capture"):
+    #         os.remove(old_images)
 
     print("Starting script in...")
     print('3')

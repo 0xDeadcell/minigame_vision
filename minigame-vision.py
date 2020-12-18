@@ -19,21 +19,20 @@ def startup():
     except FileExistsError:
         print(f"[!]Path already exists => {cwd}{static_images}\n")
 
-    print(f"[+] Attempting to clean up last sessions screen-captures in: {images}")
+    # print(f"[+] Attempting to clean up last sessions screen-captures in: {images}")
 
     # for old_images in os.listdir(images):
     #     # We will remove old screen captures if they start with "dynamic-capture"
     #     if old_images.startswith("dynamic-capture"):
     #         os.remove(old_images)
 
-    print("Starting script in...")
+    print("Please navigate to `https://animesoul.com/mini-games`, the script is starting in...")
     print('3')
     time.sleep(1)
     print('2')
     time.sleep(1)
-    print('1')
+    print('1\n')
     time.sleep(1)
-    print("Starting...\n")
 
 
 def begin_game():

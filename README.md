@@ -5,4 +5,5 @@ After cloning this repo and running for the first time, you will need to replace
 
 SETUP:
 python -m pip install requirements.txt
+
 Before running the script login and navigate to https://animesoul.com/mini-games
